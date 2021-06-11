@@ -32,7 +32,7 @@ public class Player {
 		this.controlledArmies = new ArrayList<Army>();
 	}
 	
-	public void recruitUnit(String name1, String name2, String type, String cityName) throws
+	public void recruitUnit(String type, String cityName) throws
 	BuildingInCoolDownException, MaxRecruitedException, NotEnoughGoldException{
 		for(int i = 0; i < controlledCities.size(); i++){
 			City c = controlledCities.get(i);
